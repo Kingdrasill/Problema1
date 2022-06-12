@@ -105,4 +105,4 @@ O progama disponibilizado possui um arquivo Makefile que realiza todo o procedim
 |  `make`                | Executa a compilação do programa utilizando o gcc, e o resultado vai para a pasta build           |
 |  `make run`            | Executa o programa da pasta build após a realização da compilação                                 |
 
-Trabalho realizado por Gabriel Teixeira, Lívia Gonçalves, Marcus Vinícius e Augusto Bebiano - Maio/2022
+Trabalho realizado por Gabriel Teixeira, Lívia Gonçalves, Marcus Vinícius e Augusto Bebiano - Junho/2022
