@@ -23,23 +23,30 @@
 </p>
 
 <p align="justify">
-  Após inicializar a lista os metódos recursivo e não-recursivo são chamados para encontrar os números de pares e ímpares, como os dois fazem a mesma coisa os resultados deles são iguais, a figura abaixo mostra os dois metódos e um extra para mostrar os dados do metódo recursivo. O metódo não-recursivo, CountEvenOdd,  pega um dado da lista e vê se o MOD 2 dele é 0 se for o contador de pares aumenta senão o contador de ímpares aumenta. O  método recursivo possui um método extra, RecursiveCountEvenOdd, para mostrar os dados mas o que importa é a parte recursiva, Recursion, ela vai um dado da lista e vê se ele é Nulo se for o metódo para de se chamar senão ele verifica se o dado é par ou ímpar e depois chama o metódo novamente só que agora com o próximo dado da lista com base no dado enviado.   
+  Com a lista pronta a primeira forma de contar os pares e ímpares é a não recursiva. Para fazer isto foi-se criado o método CountEvenOdd ele recebe uma lista e olha posição por posição da lista se o MOD 2 do valor da posição é 0 o contador de pares aumenta senão contador de ímpares aumenta. A imagem abaixo mostra o método CountEvenOdd: 
   <p align="center">
-    <img src="images/problema-1-contar.png">
+    <img src="images/problema-1-contar-normal.png">
+  </p>
+</p>
+
+<p align="justify">
+  A primeira forma de contar os pares e ímpares é a recursiva. Para fazer ela foi-se criado o método RecursiveCountEvenOdd que só serve para chamar a função recursiva e mostrar os dados. A função recursiva Recursion recebe uma posição da lista e uma vetor de 2 posições de inteiros par armazenar a quantidade de pares e ímpares já contados se o valor da posição for Nulo a função para de se chamar senão ela verifca se a posição é par ou ímpar do mesmo jeito que a função não-recursiva e se chama novamente com a próxima posição da atual. A imagem baixo mostra as funções RecursiveCountEvenOdd e Recursion: 
+  <p align="center">
+    <img src="images/problema-1-contar-recursivo.png">
   </p>
 </p>
 
 <h2>Problema 1-b</h2>
 
 <p align="justify">
-  Neste exercício foi criada uma função que faz um mini jogo com duas listas. Primeiro o usuário tem que informar o tamanho da listas para que os dados da lista possam ser gerados de forma aleatória entre 1 e 13. A figura abaxo é a função para inicializa as listas com os dados aleatórios. 
+  Para este exercício foi foi pedido a criação uma função que faz um mini-jogo com duas listas. Antes de chamar o método é necessário duas listas de tamanhos iguais, para criar essas listas o usuário precisa informar o tamanho delas para então o método Initialize2 possa encher essas listas com valores entre 1-13 aletoriamente. A imagem abaixo apresenta o método Initialize2:
   <p align="center">
     <img src="images/problema-1-initialize-2.png">
   </p>
 </p>
 
 <p align="justify">
-  Após inicializar as listas o metódo game é chamado para gerar um número de 1 a 13 e fazer a soma de todos os dados menos o número gerado de uma das listas e o mesmo é feito para outra lista. Com o resultado das somas ganha a lista que tiver a maior soma no final, se a soma for igual para duas listas elas empatam. A figura abaixo mostra como metódo game foi feito:  
+  Após inicializar as listas o metódo game é chamado para primeiro gerar um número entre 1 e 13 e com este número fazer a soma de cada valor das listas menos o número gerado, a soma é separada para cada lista. Com o resultado das somas ganha a lista que tiver a maior soma no final, se a soma for igual para duas listas elas empatam. A figura abaixo mostrao metódo game:  
   <p align="center">
     <img src="images/problema-1-jogo.png">
   </p>
@@ -48,16 +55,20 @@
 <h2>Problema 1-c</h2>
 
 <p align="justify">
-  Neste exercício foi criada uma função que recebe duas listas e retorna uma lista com os dados das duas juntas. Primeiro o usuário tem que informar o tamanho da listas para que os dados da lista possam ser gerados de forma aleatória entre 0 e 100. A figura abaxo é a função para inicializa as listas com os dados aleatórios. 
+  Para este exercício foi foi pedido a criação uma função que junta duas listas. Antes de chamar a função é necessário duas listas de tamanhos iguais, para criar essas listas o usuário precisa informar o tamanho delas para então o método Initialize possa encher essas listas com valores entre 0-100 aletoriamente. A imagem abaixo apresenta o método Initialize: 
   <p align="center">
     <img src="images/problema-1-initialize-1.png">
   </p>
 </p>
 
 <p align="justify">
-  Após inicializar as listas o metódo concatenar é chamado para juntar as duas listas. Mas o jeito como os dados são juntados não é primeiro com primeiro, mas primeiro de uma lista com o ultimo da outra lista até o ultimo da primeira lista com o primeiro da outra lista. Para isto ser feito dos métodos adicionais foram criados RemoveFirst e RemoveLast que respectivamentes retira o primeiro item da lista e que retira o ultimo item da lista. Com estes métodos o primeiro item da primeira lista é retiado da lista e o último item da segunda lista é retirado e os mesmos são colocados juntos numa terceria lista até não haja itens nas duas listas inicias, no final a terceira lista é retornada. A figura abaixo demonstra o código dos metódos RemoveFirst, RemoveLast e Concatenar:  
+  Antes de explicar como as listas são juntadas duas funções extras são necessárias para entender como as listas são juntadas. Elas são RemoveFirst e RemoveLast, a primeira função remove da lista a primeira posição e retorna o valor desta posição e a segunda função remove da lista a última posição e retorna o valor desta posição. As figuras abaixo mostra os métodos RemoveFirst e RemoveLast:
   <p align="center">
-    <img src="images/problema-1-remocao.png">
+    <img src="images/problema-1-remocao-primeiro.png">
+    <img src="images/problema-1-remocao-ultimo.png">
+  </p>
+  Com os as duas funções acima explicadas podemos agora entender como a função que junta as listas funciona. O nome desta função é Concatenate ela recebe as duas listas e enquanto elas estiverem com algo a seguinte operação ocorre: primeiro é recebe o valor da função RemoveFirst com a primeira lista, depois recebe o valor da função RemoveLast com a segunda lista e por último juntas esses valores e os adiciona em uma terceira lista. Quando as duas listas inicias estiverem vazias a terceira lista é retonada. A imagem abaixo mosta a função Concatenate:
+  <p align="center">
     <img src="images/problema-1-concatenar.png">
   </p>
 </p>
@@ -75,4 +86,4 @@ O progama disponibilizado possui um arquivo Makefile que realiza todo o procedim
 |  `make`                | Executa a compilação do programa utilizando o gcc, e o resultado vai para a pasta build           |
 |  `make run`            | Executa o programa da pasta build após a realização da compilação                                 |
 
-Trabalho realizado por Gabriel Teixeira, Lívia Gonçalves, Marcus Vinícius e Augusto - Maio/2022
+Trabalho realizado por Gabriel Teixeira, Lívia Gonçalves, Marcus Vinícius e Augusto Bebiano - Maio/2022
