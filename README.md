@@ -75,6 +75,25 @@
 
 <h2>Problema 1-d</h2>
 
+<p align="justify">
+  Para esse problema foi pedido a criação de uma função que receba pares de uma lista sendo essas divididas em Lista X e Lista Y, sendo esses valores maiores do que 0.
+  <p align="center">
+    <img src="img/problema-1-funcao.png">
+  </p>
+</p>
+
+<p align="justify">
+  Logo depois de criar as Listas a função deverá fazer o calculo euclidiano usando os valores respectivos dessas listas.
+  <p align="center">
+    <img src="img/probleama-1-calcdist.png"> 
+  </p>
+  Por fim essa função deverá achar os K pares mais proximos do resultado dessa euclidiana, para isso usamos a lógica de ordenar a Lista com resultados Euclidianos e mostrar os K resultantes atravez desse resultado:
+  <p align="center">
+    <img src="img/problema-1-ordena.png">
+    <img src="img/problema-1-mostrar.png">
+  </p>
+</p>
+
 # Compilação e Execução
 
 O progama disponibilizado possui um arquivo Makefile que realiza todo o procedimento de compilação e execução. Para tanto, temos as seguintes diretrizes de execução:
